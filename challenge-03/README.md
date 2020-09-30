@@ -204,5 +204,6 @@ return  ' Olá, eu sou ' + sexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + '
 
 
 // Agora, apresente-se ;)
-pessoa.apresentacao(); 
+pessoa.apresentacao(); // ' Olá, eu sou o Jackson Amorim, tenho 30 anos, 1.84, meu peso é 91 e, só hoje, eu já caminhei 15 metros!'
+
 ```
