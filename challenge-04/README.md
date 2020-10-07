@@ -7,15 +7,33 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+var isTruthy = function (param) {
+ return param ? true : false;
+ }
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy (undefind);
+isTruthy (0);
+isTruthy (-0);
+isTruthy (null);
+isTruthy (NaN);
+isTruthy ('');
+isTruthy (false);
+
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+isTruthy ('Jackson');
+isTruthy (5);
+isTruthy (true);
+isTruthy ([]);
+isTruthy (function() {});
+isTruthy ({});
+isTruthy (50 + 32);
+isTruthy (80 * 5);
+isTruthy ({ a:1 , B:3);
+isTruthy ( [ 50 ] );
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -29,35 +47,58 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+
+var carro = {
+ marca : 'Vw',
+ modelo : 'Polo',
+ placa : 'epi-0320'
+ ano : 2011,
+ cor : 'pretro',
+ quantasPortas : 4,
+ assentos : 5
+ quantidadePessoas : 0
+ };
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-?
+carro.mudarCor = function(novaCor) {
+return carro.cor = novaCor;
+}
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-?
+carro.obterCor = function () {
+ return carro.cor;
+ }
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
-?
+carro.obterModelo = function () {
+ return carro.modelo;
+ }
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
-?
+
+carro.obterMarca = function() {
+ return carro.marca;
+ }
+
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
-?
+carro.ObterMarcaModelo() {
+ return ' Esse carro é um ' + carro.marca + ' ' + carro.modelo +;
+ }
+
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
